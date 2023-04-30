@@ -1,0 +1,194 @@
+body {
+  background-color: rgb(0, 161, 225);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+/* form */
+.form-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  input {
+    width: 90%;
+    height: 22px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+  }
+  
+  .select {
+    width: 90%;
+    height: 150px;
+    background-color: #fff;
+    overflow: scroll;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+  }
+
+  .selectDiv {
+    width: 90%;
+    background-color: #fff;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  
+  button[type="submit"], button[type="cancel"], button[type="save"] {
+    display: block;
+    margin: 1rem auto;
+    margin-top: 40px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    background-color: green;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @media (min-width: 768px) {
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+
+  .formDiv {
+    margin: 20px;
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, .2);
+  }
+
+  .cardDiv {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, .2);
+  }
+
+  .note {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    color: white;
+  }
+
+  .errorAlert {
+    width: 90%;
+    height: 22px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid red;
+    background-color: rgba(	255, 10, 0, 0.3);
+  }
+
+
+
+  /* check box */
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-label {
+    position: relative;
+    top: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border: 1px solid #222;
+    border-radius: 2px;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .checkbox-label input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .checkbox-label .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid #555;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  .selectOption:hover {
+    background-color: rgb(0, 149, 255);
+    cursor: pointer;
+  }
+
+
+  
+
+  /* nav bar */
+  .navbar {
+    display: flex;
+    align-items: center;
+    background: rebeccapurple;
+    color: white;
+    font-family: Helvetica;
+    font-weight: 300;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.navbar__title {
+    margin-right: auto;
+    font-size: 150%;
+    padding: 12px 16px;
+}
+
+.navbar__item {
+    padding: 16px 16px;
+    cursor: pointer;
+    vertical-align: middle;
+    color: white;
+}
